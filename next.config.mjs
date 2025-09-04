@@ -38,6 +38,15 @@ const nextConfig = {
   // ...other config
   experimental: {
     typedRoutes: true,
+    serverActions: {
+      allowedOrigins: [
+        'localhost:3001',
+        'localhost:3000',
+        '*.app.github.dev',
+        'turbo-space-guacamole-wrvpj6476xwjcg6xw-3001.app.github.dev',
+        'turbo-space-guacamole-wrvpj6476xwjcg6xw-3002.app.github.dev',
+      ],
+    },
   },
   logging: {
     fetches: {
